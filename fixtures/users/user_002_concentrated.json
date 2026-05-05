@@ -1,0 +1,12 @@
+{
+  "user_id": "user_002",
+  "name": "Jordan Smith",
+  "kyc_status": "verified",
+  "risk_profile": "moderate",
+  "portfolio": {
+    "base_currency": "USD",
+    "holdings": [
+      {"ticker": "AAPL", "quantity": 500, "current_price": 182.00, "currency": "USD", "cost_basis": 140.00, "purchase_date": "2021-03-01"}
+    ]
+  }
+}

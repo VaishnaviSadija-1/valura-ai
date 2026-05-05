@@ -1,0 +1,19 @@
+{
+  "conversation_id": "conv_003",
+  "description": "Portfolio check then recommendations",
+  "turns": [
+    {
+      "turn": 1,
+      "user": "How diversified is my portfolio?",
+      "expected_agent": "portfolio_health",
+      "expected_entities": {}
+    },
+    {
+      "turn": 2,
+      "user": "What should I do to improve it?",
+      "expected_agent": "recommendations",
+      "expected_entities": {},
+      "note": "continuation - recommendations based on prior portfolio check"
+    }
+  ]
+}

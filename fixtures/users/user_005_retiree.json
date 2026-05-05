@@ -1,0 +1,16 @@
+{
+  "user_id": "user_005",
+  "name": "Eleanor Vance",
+  "kyc_status": "verified",
+  "risk_profile": "conservative",
+  "portfolio": {
+    "base_currency": "USD",
+    "holdings": [
+      {"ticker": "JNJ", "quantity": 100, "current_price": 155.00, "currency": "USD", "cost_basis": 160.00, "purchase_date": "2020-01-10"},
+      {"ticker": "KO", "quantity": 200, "current_price": 60.00, "currency": "USD", "cost_basis": 55.00, "purchase_date": "2020-01-10"},
+      {"ticker": "PG", "quantity": 80, "current_price": 160.00, "currency": "USD", "cost_basis": 130.00, "purchase_date": "2020-01-10"},
+      {"ticker": "VZ", "quantity": 150, "current_price": 40.00, "currency": "USD", "cost_basis": 55.00, "purchase_date": "2020-01-10"},
+      {"ticker": "O", "quantity": 100, "current_price": 55.00, "currency": "USD", "cost_basis": 62.00, "purchase_date": "2020-01-10"}
+    ]
+  }
+}

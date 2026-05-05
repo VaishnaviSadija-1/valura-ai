@@ -1,0 +1,15 @@
+{
+  "user_id": "user_003",
+  "name": "Maria Santos",
+  "kyc_status": "verified",
+  "risk_profile": "moderate",
+  "portfolio": {
+    "base_currency": "USD",
+    "holdings": [
+      {"ticker": "AAPL", "quantity": 20, "current_price": 182.00, "currency": "USD", "cost_basis": 150.00, "purchase_date": "2023-01-15"},
+      {"ticker": "MSFT", "quantity": 15, "current_price": 415.00, "currency": "USD", "cost_basis": 330.00, "purchase_date": "2023-01-15"},
+      {"ticker": "ASML", "quantity": 10, "current_price": 780.00, "currency": "USD", "cost_basis": 620.00, "purchase_date": "2023-01-15"},
+      {"ticker": "INFY", "quantity": 100, "current_price": 18.50, "currency": "USD", "cost_basis": 16.00, "purchase_date": "2023-06-01"}
+    ]
+  }
+}

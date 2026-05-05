@@ -1,0 +1,15 @@
+{
+  "user_id": "user_001",
+  "name": "Alex Chen",
+  "kyc_status": "verified",
+  "risk_profile": "aggressive",
+  "portfolio": {
+    "base_currency": "USD",
+    "holdings": [
+      {"ticker": "NVDA", "quantity": 100, "current_price": 875.00, "currency": "USD", "cost_basis": 220.00, "purchase_date": "2022-06-15"},
+      {"ticker": "TSLA", "quantity": 50, "current_price": 175.00, "currency": "USD", "cost_basis": 200.00, "purchase_date": "2022-06-15"},
+      {"ticker": "AMD", "quantity": 75, "current_price": 165.00, "currency": "USD", "cost_basis": 90.00, "purchase_date": "2022-06-15"},
+      {"ticker": "PLTR", "quantity": 200, "current_price": 22.00, "currency": "USD", "cost_basis": 15.00, "purchase_date": "2023-01-10"}
+    ]
+  }
+}

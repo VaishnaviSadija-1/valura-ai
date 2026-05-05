@@ -1,0 +1,19 @@
+{
+  "conversation_id": "conv_002",
+  "description": "Topic switch handling",
+  "turns": [
+    {
+      "turn": 1,
+      "user": "Give me a health check on my portfolio",
+      "expected_agent": "portfolio_health",
+      "expected_entities": {}
+    },
+    {
+      "turn": 2,
+      "user": "What's the compound interest on $5000 at 5% for 20 years?",
+      "expected_agent": "financial_calculator",
+      "expected_entities": {"amounts": [5000]},
+      "note": "topic switch - no follow-up resolution needed"
+    }
+  ]
+}

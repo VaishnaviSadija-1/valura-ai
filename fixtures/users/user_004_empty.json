@@ -1,0 +1,10 @@
+{
+  "user_id": "user_004",
+  "name": "Sam Rivera",
+  "kyc_status": "pending",
+  "risk_profile": "moderate",
+  "portfolio": {
+    "base_currency": "USD",
+    "holdings": []
+  }
+}

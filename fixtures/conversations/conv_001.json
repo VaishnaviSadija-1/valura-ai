@@ -1,0 +1,19 @@
+{
+  "conversation_id": "conv_001",
+  "description": "Follow-up ticker resolution",
+  "turns": [
+    {
+      "turn": 1,
+      "user": "Tell me about Microsoft stock",
+      "expected_agent": "market_research",
+      "expected_entities": {"tickers": ["MSFT"]}
+    },
+    {
+      "turn": 2,
+      "user": "What about Apple?",
+      "expected_agent": "market_research",
+      "expected_entities": {"tickers": ["AAPL"]},
+      "note": "follow-up should resolve Apple from context"
+    }
+  ]
+}
