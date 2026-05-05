@@ -116,6 +116,10 @@ class PortfolioHealthAgent(BaseAgent):
     async def _onboarding(
         self, risk_profile: str, kyc_status: str, session_id: str
     ) -> AsyncIterator[SSEEvent]:
+        # Emit first token immediately — decouples first-token latency from computation
+        yield SSEEvent(event="token", data={"text": "Welcome to Valura AI!\n\n"})
+        await asyncio.sleep(0)
+
         observations: List[Observation] = []
         if kyc_status == "pending":
             observations.append(
@@ -148,7 +152,6 @@ class PortfolioHealthAgent(BaseAgent):
         )
 
         narrative_parts = [
-            "Welcome to Valura AI!\n\n",
             "It looks like you haven't added any holdings to your portfolio yet. "
             "Once you add your investments, I'll be able to provide a full health check "
             "including concentration risk, performance tracking, and benchmark comparison.\n\n",
@@ -211,6 +214,10 @@ class PortfolioHealthAgent(BaseAgent):
         kyc_status: str,
         session_id: str,
     ) -> AsyncIterator[SSEEvent]:
+        # Emit first token immediately so first-token latency is not gated on yfinance
+        yield SSEEvent(event="token", data={"text": "Analyzing your portfolio...\n\n"})
+        await asyncio.sleep(0)
+
         observations: List[Observation] = []
 
         if kyc_status == "pending":
@@ -329,7 +336,7 @@ class PortfolioHealthAgent(BaseAgent):
             session_id=session_id,
         )
 
-        # Narrative streaming
+        # Narrative streaming — first token was already emitted above
         total_value_str = f"{total_value:,.2f}"
         narrative_parts = [
             "Here's your portfolio health check.\n\n",
